@@ -1,3 +1,4 @@
+/*cabecera*/
 .cabecera__container {
   display: flex;
   justify-content: space-between;
@@ -10,17 +11,27 @@
   display: none;
 }
 
+/*seccion superior*/
+.superior__seccion__container {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: scroll;
+  gap: 15px;
+}
+
+/*rodapie*/
 .rodapie__container {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
 }
 
 @media (min-width: 834px) {
+  /*cabecera*/
   .cabecera__buscar__item {
     display: block;
   }
-
+  /*rodapie*/
   .rodapie__container {
     justify-content: space-between;
   }

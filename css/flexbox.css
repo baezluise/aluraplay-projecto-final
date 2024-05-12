@@ -122,30 +122,36 @@
   .premium {
     order: 1;
   }
+}
 
-  .videos__item {
-    height: 303px;
-    width: 280px;
-  }
+.videos__item {
+  height: 303px;
+  width: 280px;
+  flex-grow: 1;
+}
 
-  .descripcion-video {
-    margin-top: 1rem;
-    display: flex;
-    align-items: start;
-  }
+.videos__container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .descripcion-video img {
-    margin-right: 1rem;
-    flex-shrink: 0;
-    /*Evita que la imagen se reduzca */
-  }
+.descripcion-video {
+  margin-top: 1rem;
+  display: flex;
+  align-items: start;
+}
 
-  .detalles__video {
-    flex-direction: column;
-    text-align: left;
-  }
+.descripcion-video img {
+  margin-right: 1rem;
+  flex-shrink: 0;
+  /*Evita que la imagen se reduzca */
+}
 
-  .detalles__video h3 {
-    margin-bottom: 10px;
-  }
+.detalles__video {
+  flex-direction: column;
+  text-align: left;
+}
+
+.detalles__video h3 {
+  margin-bottom: 10px;
 }
